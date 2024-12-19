@@ -10,7 +10,7 @@ class wd(Method):
     def __init__(self):
         super().__init__()
 
-    def gdo_parameters(self) -> [GDT]:
+    def gdo_parameters(self) -> list[GDT]:
         return [
             GDT_Bool('all').not_null().initial('0'),
             GDT_Bool('warn').not_null().initial('0'),
